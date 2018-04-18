@@ -7,11 +7,11 @@
  * in the user guide at https://docs.gradle.org/4.6/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'hotdog-madness'
+rootProject.name = 'hot-dog-madness'
 
 
-include 'best-hotdog-stand-in-town'
-include 'adversarial-hotdog-stand'
+include 'best-hot-dog-stand-in-town'
+include 'adversarial-hot-dog-stand'
 include 'wholesale-store'
-include 'hotdog-api'
+include 'hot-dog-api'
 
