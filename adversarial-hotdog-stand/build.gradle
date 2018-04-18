@@ -1,0 +1,7 @@
+apply from: "$rootDir/subprojects.gradle"
+
+dependencies {
+	compile project(':hotdog-api')
+	compile project(':wholesale-store')
+	compile project(':best-hotdog-stand-in-town')
+}
