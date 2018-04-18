@@ -22,9 +22,4 @@ public class VeryBestHotDogStand implements HotDogStand {
 
 		return new HotDog(bun, sausage, sauce);
 	}
-
-	@Override
-	public long getPriceOfHotDog() {
-		return 10;
-	}
 }

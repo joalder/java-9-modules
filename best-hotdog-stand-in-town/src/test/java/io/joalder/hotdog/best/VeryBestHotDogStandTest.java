@@ -26,13 +26,4 @@ public class VeryBestHotDogStandTest {
 
 		assertEquals(45, hotDog.getQuality());
 	}
-
-	@Test
-	public void getPriceOfHotDog() {
-		VeryBestHotDogStand veryBestHotDogStand = new VeryBestHotDogStand();
-
-		long priceOfHotDog = veryBestHotDogStand.getPriceOfHotDog();
-
-		assertEquals(10, priceOfHotDog);
-	}
 }
