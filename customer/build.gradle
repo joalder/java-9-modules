@@ -1,0 +1,13 @@
+apply from: "$rootDir/subprojects.gradle"
+
+apply plugin: 'application'
+
+dependencies {
+	compile project(':hot-dog-api')
+	compile project(':adversarial-hot-dog-stand')
+	compile project(':best-hot-dog-stand-in-town')
+}
+
+mainClassName = "io.joalder.hotdog.customer.Customer"
+
+run {}

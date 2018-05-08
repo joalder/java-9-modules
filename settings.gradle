@@ -12,6 +12,6 @@ rootProject.name = 'hot-dog-madness'
 
 include 'best-hot-dog-stand-in-town'
 include 'adversarial-hot-dog-stand'
+include 'customer'
 include 'wholesale-store'
 include 'hot-dog-api'
-
