@@ -1,4 +1,4 @@
-package io.joalder.hotdog.adversarial;
+package io.joalder.hotdog.evil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -7,11 +7,11 @@ import org.junit.Test;
 
 import io.joalder.hotdog.api.HotDog;
 
-public class AdversarialHotDogStandTest {
+public class EvilHotDogStandTest {
 
 	@Test
 	public void buyHotDog() {
-		AdversarialHotDogStand veryBestHotDogStand = new AdversarialHotDogStand();
+		EvilHotDogStand veryBestHotDogStand = new EvilHotDogStand();
 
 		HotDog hotDog = veryBestHotDogStand.buyHotDog();
 
@@ -20,7 +20,7 @@ public class AdversarialHotDogStandTest {
 
 	@Test
 	public void verifyHotDogQuality() {
-		AdversarialHotDogStand veryBestHotDogStand = new AdversarialHotDogStand();
+		EvilHotDogStand veryBestHotDogStand = new EvilHotDogStand();
 
 		HotDog hotDog = veryBestHotDogStand.buyHotDog();
 

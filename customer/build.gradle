@@ -4,7 +4,7 @@ apply plugin: 'application'
 
 dependencies {
 	compile project(':hot-dog-api')
-	compile project(':adversarial-hot-dog-stand')
+	compile project(':evil-hot-dog-stand')
 	compile project(':best-hot-dog-stand-in-town')
 }
 
