@@ -11,6 +11,11 @@ import io.joalder.hotdog.wholesale.StandardSausage;
 
 public class EvilHotDogStand implements HotDogStand {
 	@Override
+	public String getName() {
+		return "Evil Hot Dog Stand";
+	}
+
+	@Override
 	public HotDog buyHotDog() {
 		return makeHotDog();
 	}
