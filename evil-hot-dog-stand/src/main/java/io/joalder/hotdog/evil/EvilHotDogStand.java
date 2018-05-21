@@ -1,4 +1,4 @@
-package io.joalder.hotdog.adversarial;
+package io.joalder.hotdog.evil;
 
 import io.joalder.hotdog.api.HotDog;
 import io.joalder.hotdog.api.HotDogStand;
@@ -9,7 +9,12 @@ import io.joalder.hotdog.wholesale.StandardBun;
 import io.joalder.hotdog.wholesale.StandardSauce;
 import io.joalder.hotdog.wholesale.StandardSausage;
 
-public class AdversarialHotDogStand implements HotDogStand {
+public class EvilHotDogStand implements HotDogStand {
+	@Override
+	public String getName() {
+		return "Evil Hot Dog Stand";
+	}
+
 	@Override
 	public HotDog buyHotDog() {
 		return makeHotDog();
