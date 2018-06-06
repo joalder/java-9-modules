@@ -1,5 +1,7 @@
 apply from: "$rootDir/subprojects.gradle"
 
+ext.moduleName = 'io.joalder.hotdog.wholesale'
+
 dependencies {
 	compile project(':hot-dog-api')
 }
