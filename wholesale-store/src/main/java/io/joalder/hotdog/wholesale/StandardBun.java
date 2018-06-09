@@ -7,4 +7,5 @@ public class StandardBun implements Bun {
 	public int getQuality() {
 		return 3;
 	}
+
 }
