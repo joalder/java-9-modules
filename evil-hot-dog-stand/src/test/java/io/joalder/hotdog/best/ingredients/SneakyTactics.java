@@ -21,7 +21,7 @@ public class SneakyTactics {
 
 	@Test
 	public void directAccessFullyQualified() {
-		SecretSauce secretSauce = new SecretSauce();
+		SecretSauce secretSauce = new io.joalder.hotdog.best.ingredients.SecretSauce();
 
 		HotDog hotDog = new HotDog(new StandardBun(), new StandardSausage(), secretSauce);
 
