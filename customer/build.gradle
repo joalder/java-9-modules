@@ -2,7 +2,7 @@ apply from: "$rootDir/subprojects.gradle"
 
 apply plugin: 'application'
 
-ext.moduleName = 'io.joalder.hotdog.customer'
+javaModule.name = 'io.joalder.hotdog.customer'
 
 dependencies {
 	compile project(':hot-dog-api')
