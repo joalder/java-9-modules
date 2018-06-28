@@ -12,3 +12,4 @@
 
 [Using Java 9 modules: chances and challenges: Rafael Winterhalter @ JavaZone 2017](https://vimeo.com/233647882)
 
+[Rebellabs JPMS Cheat Sheet](https://zeroturnaround.com/rebellabs/java-9-modules-cheat-sheet/)
