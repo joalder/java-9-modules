@@ -28,14 +28,4 @@ public class SneakyTactics {
 		assertEquals(45, hotDog.getQuality());
 	}
 
-	@Test
-	public void loadByClassLoader() throws Exception {
-
-		Class clazz = SneakyTactics.class.getClassLoader().loadClass("io.joalder.hotdog.best.ingredients.SecretSauce");
-		SecretSauce secretSauce = (SecretSauce) clazz.getConstructor().newInstance();
-
-		HotDog hotDog = new HotDog(new StandardBun(), new StandardSausage(), secretSauce);
-
-		assertEquals(45, hotDog.getQuality());
-	}
 }
