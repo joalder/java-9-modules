@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MODULES</ID>
+  <OriginalElement>mdl-customer</OriginalElement>
+  <nodes>
+    <node x="254.0" y="79.0">mdl-evil-hot-dog-stand</node>
+    <node x="164.0" y="237.0">mdl-hot-dog-api</node>
+    <node x="0.0" y="79.0">mdl-best-hot-dog-stand-in-town</node>
+    <node x="154.5" y="158.0">mdl-wholesale-store</node>
+    <node x="167.3571428571428" y="0.0">mdl-customer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="mdl-evil-hot-dog-stand" target="mdl-hot-dog-api">
+      <point x="45.500000000000014" y="14.5" />
+      <point x="390.5" y="133.0" />
+      <point x="371.0" y="133.0" />
+      <point x="371.0" y="212.0" />
+      <point x="286.5" y="212.0" />
+      <point x="49.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-best-hot-dog-stand-in-town" target="mdl-hot-dog-api">
+      <point x="-58.5" y="14.5" />
+      <point x="58.5" y="133.0" />
+      <point x="92.85714285714283" y="133.0" />
+      <point x="92.85714285714283" y="212.0" />
+      <point x="188.5" y="212.0" />
+      <point x="-49.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-customer" target="mdl-evil-hot-dog-stand">
+      <point x="32.75000000000003" y="14.5" />
+      <point x="265.60714285714283" y="54.0" />
+      <point x="345.0" y="54.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-best-hot-dog-stand-in-town" target="mdl-wholesale-store">
+      <point x="58.5" y="14.5" />
+      <point x="175.5" y="133.0" />
+      <point x="196.0" y="133.0" />
+      <point x="-41.5" y="-14.5" />
+    </edge>
+    <edge source="mdl-evil-hot-dog-stand" target="mdl-wholesale-store">
+      <point x="-45.5" y="14.5" />
+      <point x="299.5" y="133.0" />
+      <point x="279.0" y="133.0" />
+      <point x="41.5" y="-14.5" />
+    </edge>
+    <edge source="mdl-wholesale-store" target="mdl-hot-dog-api">
+      <point x="0.0" y="14.5" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-customer" target="mdl-best-hot-dog-stand-in-town">
+      <point x="-32.74999999999997" y="14.5" />
+      <point x="200.10714285714283" y="54.0" />
+      <point x="117.0" y="54.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="218.0" y="133.0" />
+  <SelectedNodes />
+  <Categories />
+</Diagram>
+
