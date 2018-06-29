@@ -4,6 +4,7 @@ import io.joalder.hotdog.api.HotDog;
 import io.joalder.hotdog.api.HotDogStand;
 import io.joalder.hotdog.best.VeryBestHotDogStand;
 import io.joalder.hotdog.evil.EvilHotDogStand;
+import org.apache.commons.lang3.StringUtils;
 
 public class Customer {
 	public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class Customer {
 	}
 
 	private void visitHotDogStand(HotDogStand evilHotDogStand) {
-		System.out.println(String.format("Going to '%s'", evilHotDogStand.getName()));
+		System.out.println(StringUtils.leftPad(String.format("=> %s", evilHotDogStand.getName()),40));
 		HotDog hotDog = evilHotDogStand.buyHotDog();
 		System.out.println(String.format("Mhh.. Hot Dog! Tastes like a %d", hotDog.getQuality()));
 	}

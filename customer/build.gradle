@@ -8,6 +8,7 @@ dependencies {
 	compile project(':hot-dog-api')
 	compile project(':evil-hot-dog-stand')
 	compile project(':best-hot-dog-stand-in-town')
+	compile 'org.apache.commons:commons-lang3:3.7'
 }
 
 mainClassName = "io.joalder.hotdog.customer.Customer"
