@@ -18,3 +18,9 @@ bootJar {
     baseName = 'hot-dog-rest-service'
     version = '0.1.0'
 }
+
+bootRun {
+    main = "io.joalder.hotdog.customer.CustomerApplication"
+    jvmArgs = ['--module-path=' + classpath.asPath, '--add-modules=io.joalder.hotdog.customer']
+    classpath = files()
+}
