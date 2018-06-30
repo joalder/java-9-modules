@@ -1,3 +1,1 @@
 apply from: "$rootDir/subprojects.gradle"
-
-javaModule.name = 'io.joalder.hotdog.api'

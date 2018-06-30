@@ -2,8 +2,6 @@ apply from: "$rootDir/subprojects.gradle"
 
 apply plugin: 'application'
 
-javaModule.name = 'io.joalder.hotdog.customer'
-
 dependencies {
 	compile project(':hot-dog-api')
 	compile project(':evil-hot-dog-stand')
@@ -13,3 +11,6 @@ dependencies {
 mainClassName = "io.joalder.hotdog.customer.Customer"
 
 run {}
+
+compileJava.dependsOn(":evil-hot-dog-stand:build")
+compileJava.dependsOn(":best-hot-dog-stand-in-town:build")

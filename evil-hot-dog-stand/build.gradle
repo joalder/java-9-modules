@@ -1,9 +1,11 @@
 apply from: "$rootDir/subprojects.gradle"
 
-javaModule.name = 'io.joalder.hotdog.evil'
-
 dependencies {
 	compile project(':hot-dog-api')
 	compile project(':wholesale-store')
 	compile project(':best-hot-dog-stand-in-town')
+
+	testCompile "org.mockito:mockito-core:2.+"
 }
+
+compileJava.dependsOn(":wholesale-store:build")
