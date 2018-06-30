@@ -3,13 +3,11 @@ apply from: "$rootDir/subprojects.gradle"
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-javaModule.name = 'io.joalder.hotdog.customer'
-
 dependencies {
     compile project(':hot-dog-api')
     compile project(':evil-hot-dog-stand')
     compile project(':best-hot-dog-stand-in-town')
-
+	compile 'org.apache.commons:commons-lang3:3.7'
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
@@ -18,3 +16,6 @@ bootJar {
     baseName = 'hot-dog-rest-service'
     version = '0.1.0'
 }
+
+compileJava.dependsOn(":evil-hot-dog-stand:build")
+compileJava.dependsOn(":best-hot-dog-stand-in-town:build")

@@ -1,11 +1,12 @@
 package io.joalder.hotdog.evil;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
+import io.joalder.hotdog.api.HotDog;
 import org.junit.Test;
 
-import io.joalder.hotdog.api.HotDog;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verifyZeroInteractions;
 
 public class EvilHotDogStandTest {
 
@@ -25,5 +26,12 @@ public class EvilHotDogStandTest {
 		HotDog hotDog = veryBestHotDogStand.buyHotDog();
 
 		assertEquals(27, hotDog.getQuality());
+	}
+
+	@Test
+	public void mockitoTest() {
+		EvilHotDogStand mockedHotDogStand = mock(EvilHotDogStand.class);
+
+		verifyZeroInteractions(mockedHotDogStand);
 	}
 }

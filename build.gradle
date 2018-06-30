@@ -1,5 +1,5 @@
 plugins {
-    id 'org.gradle.java.experimental-jigsaw' version '0.1.1'
+    id 'com.zyxist.chainsaw' version '0.3.1'
     id "org.springframework.boot" version "2.0.3.RELEASE"
 }
 
