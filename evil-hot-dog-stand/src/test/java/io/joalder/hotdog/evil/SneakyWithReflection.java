@@ -11,9 +11,9 @@ import static org.junit.Assert.assertEquals;
 
 public class SneakyWithReflection {
 
-  @Test
-  @Ignore
-  public void loadByClassLoader() throws Exception {
+	@Test
+	@Ignore
+	public void loadByClassLoader() throws Exception {
 
 		Class clazz = SneakyWithReflection.class.getClassLoader().loadClass("io.joalder.hotdog.best.ingredients.SecretSauce");
 		Sauce secretSauce = (Sauce) clazz.getConstructor().newInstance();
