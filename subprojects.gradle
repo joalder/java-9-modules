@@ -1,5 +1,5 @@
 apply plugin: "java"
-apply plugin: "org.gradle.java.experimental-jigsaw"
+apply plugin: "com.zyxist.chainsaw"
 
 dependencies {
 	testCompile 'junit:junit:4.12'
@@ -7,4 +7,8 @@ dependencies {
 
 repositories {
 	jcenter()
+}
+
+afterEvaluate {
+	javaModule.extraTestModules = ['org.mockito']
 }
