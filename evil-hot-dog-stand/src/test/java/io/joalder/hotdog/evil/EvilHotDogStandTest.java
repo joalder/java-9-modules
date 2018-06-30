@@ -1,11 +1,10 @@
 package io.joalder.hotdog.evil;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
+import io.joalder.hotdog.api.HotDog;
 import org.junit.Test;
 
-import io.joalder.hotdog.api.HotDog;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class EvilHotDogStandTest {
 

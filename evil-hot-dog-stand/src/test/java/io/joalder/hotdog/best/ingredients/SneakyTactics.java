@@ -1,12 +1,11 @@
 package io.joalder.hotdog.best.ingredients;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-
 import io.joalder.hotdog.api.HotDog;
 import io.joalder.hotdog.wholesale.StandardBun;
 import io.joalder.hotdog.wholesale.StandardSausage;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class SneakyTactics {
 

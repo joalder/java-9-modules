@@ -21,7 +21,7 @@ public class Customer {
 	}
 
 	private void visitHotDogStand(HotDogStand evilHotDogStand) {
-		System.out.println(StringUtils.leftPad(String.format("=> %s", evilHotDogStand.getName()),40));
+		System.out.println(StringUtils.leftPad(String.format("=> %s", evilHotDogStand.getName()), 40));
 		HotDog hotDog = evilHotDogStand.buyHotDog();
 		System.out.println(String.format("Mhh.. Hot Dog! Tastes like a %d", hotDog.getQuality()));
 	}
