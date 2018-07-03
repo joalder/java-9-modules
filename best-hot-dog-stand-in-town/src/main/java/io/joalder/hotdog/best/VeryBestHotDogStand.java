@@ -10,6 +10,11 @@ import io.joalder.hotdog.wholesale.StandardBun;
 import io.joalder.hotdog.wholesale.StandardSausage;
 
 public class VeryBestHotDogStand implements HotDogStand {
+
+	static {
+		ModulePathEnforcer.enforce(VeryBestHotDogStand.class);
+	}
+
 	@Override
 	public String getName() {
 		return "Best Hot Dog Stand in Town";
