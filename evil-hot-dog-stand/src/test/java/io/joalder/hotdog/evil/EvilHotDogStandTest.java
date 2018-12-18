@@ -1,6 +1,7 @@
 package io.joalder.hotdog.evil;
 
 import io.joalder.hotdog.api.HotDog;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
