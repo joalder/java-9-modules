@@ -13,4 +13,7 @@ dependencies {
 
 mainClassName = "io.joalder.hotdog.customer.Customer"
 
-run {}
+run {
+	jvmArgs = ['--module-path=' + classpath.asPath, '--module=io.joalder.hotdog.customer/io.joalder.hotdog.customer.Customer']
+	classpath = files()
+}
