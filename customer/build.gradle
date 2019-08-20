@@ -12,6 +12,3 @@ dependencies {
 mainClassName = "io.joalder.hotdog.customer.Customer"
 
 run {}
-
-compileJava.dependsOn(":evil-hot-dog-stand:build")
-compileJava.dependsOn(":best-hot-dog-stand-in-town:build")

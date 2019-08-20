@@ -3,5 +3,3 @@ apply from: "$rootDir/subprojects.gradle"
 dependencies {
 	compile project(':hot-dog-api')
 }
-
-compileJava.dependsOn(":hot-dog-api:build")

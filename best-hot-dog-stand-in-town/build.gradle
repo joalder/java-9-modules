@@ -4,5 +4,3 @@ dependencies {
 	compile project(':hot-dog-api')
 	compile project(':wholesale-store')
 }
-
-compileJava.dependsOn(":wholesale-store:build")

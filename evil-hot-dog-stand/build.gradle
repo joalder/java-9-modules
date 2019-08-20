@@ -15,5 +15,3 @@ test {
 		]
 	}
 }
-
-compileJava.dependsOn(":wholesale-store:build")
