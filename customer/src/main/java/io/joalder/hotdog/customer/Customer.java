@@ -2,9 +2,9 @@ package io.joalder.hotdog.customer;
 
 import io.joalder.hotdog.api.HotDog;
 import io.joalder.hotdog.api.HotDogStand;
-import io.joalder.hotdog.best.VeryBestHotDogStand;
-import io.joalder.hotdog.evil.EvilHotDogStand;
 import org.apache.commons.lang3.StringUtils;
+
+import java.util.ServiceLoader;
 
 public class Customer {
 	public static void main(String[] args) {
@@ -13,11 +13,13 @@ public class Customer {
 	}
 
 	public void eatHotDogs() {
-		EvilHotDogStand evilHotDogStand = new EvilHotDogStand();
-		VeryBestHotDogStand veryBestHotDogStand = new VeryBestHotDogStand();
+		System.out.println("Lookup HotDog stands");
 
-		visitHotDogStand(evilHotDogStand);
-		visitHotDogStand(veryBestHotDogStand);
+		Iterable<HotDogStand> allHotDogStands = ServiceLoader.load(HotDogStand.class);
+
+		for (HotDogStand hotdogStand: allHotDogStands) {
+			visitHotDogStand(hotdogStand);
+		}
 	}
 
 	private void visitHotDogStand(HotDogStand evilHotDogStand) {
