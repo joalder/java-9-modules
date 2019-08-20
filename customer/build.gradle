@@ -19,7 +19,7 @@ bootJar {
 
 bootRun {
     main = "io.joalder.hotdog.customer.CustomerApplication"
-    jvmArgs = ['--module-path=' + classpath.asPath, '--add-modules=io.joalder.hotdog.customer']
+	jvmArgs = ['--module-path=' + classpath.asPath, '--add-modules=io.joalder.hotdog.customer', '--add-opens=java.base/java.lang=spring.core']
     classpath = files()
 }
 
