@@ -1,5 +1,5 @@
 apply plugin: "java"
-apply plugin: "com.zyxist.chainsaw"
+apply plugin: "org.javamodularity.moduleplugin"
 
 dependencies {
 	testCompile 'junit:junit:4.12'
@@ -7,8 +7,4 @@ dependencies {
 
 repositories {
 	jcenter()
-}
-
-afterEvaluate {
-	javaModule.extraTestModules = ['org.mockito']
 }
