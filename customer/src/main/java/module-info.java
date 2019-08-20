@@ -9,5 +9,9 @@ module io.joalder.hotdog.customer {
 	requires spring.web;
 
 	opens io.joalder.hotdog.customer to spring.core, spring.beans, spring.context;
+	exports io.joalder.hotdog.customer to spring.core, spring.beans, spring.context;
+
+
 	opens io.joalder.hotdog.customer.controllers to spring.beans, spring.web;
+	exports io.joalder.hotdog.customer.controllers to spring.beans, spring.web;
 }
